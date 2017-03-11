@@ -15,3 +15,6 @@ set expandtab
 
 " tab completion
 set wildmenu
+
+" highlight found words
+set hlsearch
