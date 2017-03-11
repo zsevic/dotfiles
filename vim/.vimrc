@@ -18,3 +18,6 @@ set wildmenu
 
 " highlight found words
 set hlsearch
+
+" background color
+highlight Normal ctermfg=grey ctermbg=black
