@@ -1,3 +1,6 @@
+
+filetype plugin on
+
 " display line numbers
 set number
 
@@ -7,11 +10,11 @@ syntax on
 " automatic indention
 set autoindent
 
-" set tab to 4 spaces
+" tabs
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
 
 " tab completion
 set wildmenu
@@ -21,3 +24,6 @@ set hlsearch
 
 " background color
 highlight Normal ctermfg=grey ctermbg=black
+
+" makefile
+autocmd FileType make setlocal noexpandtab
