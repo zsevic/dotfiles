@@ -1,6 +1,3 @@
-
-filetype plugin on
-
 " display line numbers
 set number
 
@@ -27,3 +24,6 @@ highlight Normal ctermfg=grey ctermbg=black
 
 " makefile
 autocmd FileType make setlocal noexpandtab
+
+" press left/right and move to the previous/next line after reaching first/last character in the line
+set whichwrap+=<,>,h,l,[,]
