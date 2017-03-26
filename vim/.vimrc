@@ -22,8 +22,12 @@ set hlsearch
 " background color
 highlight Normal ctermfg=grey ctermbg=black
 
-" makefile
+" makefile tabs
 autocmd FileType make setlocal noexpandtab
 
 " press left/right and move to the previous/next line after reaching first/last character in the line
 set whichwrap+=<,>,h,l,[,]
+
+" long lines
+nnoremap k gk
+nnoremap j gj
