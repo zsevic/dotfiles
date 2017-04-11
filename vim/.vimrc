@@ -31,3 +31,9 @@ set whichwrap+=<,>,h,l,[,]
 " long lines
 nnoremap k gk
 nnoremap j gj
+
+" disable arrow keys in normal mode
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
