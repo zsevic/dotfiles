@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=$(pwd)
+DIR=$(cd "$(dirname "$0")"; pwd)
 
 echo "creating symbolic link ~/.gitconfig from $DIR/git/.config"
 ln -s $DIR/git/.gitconfig ~/.gitconfig
