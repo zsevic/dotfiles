@@ -1,5 +1,6 @@
-" display line numbers
+" hybrid line numbers
 set number
+set relativenumber
 
 " syntax highlighting 
 syntax on
@@ -40,7 +41,3 @@ map <Down> <Nop>
 
 "toggling paste mode
 set pastetoggle=<F2>
-
-"numbers
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
