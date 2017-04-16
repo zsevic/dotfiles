@@ -2,8 +2,8 @@
 set number
 set relativenumber
 
-" syntax highlighting 
-syntax on
+" colorscheme
+colo peachpuff
 
 " automatic indention
 set autoindent
@@ -19,9 +19,6 @@ set wildmenu
 
 " highlight found words
 set hlsearch
-
-" background color
-highlight Normal ctermfg=grey ctermbg=black
 
 " makefile tabs
 autocmd FileType make setlocal noexpandtab
