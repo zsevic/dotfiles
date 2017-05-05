@@ -1,5 +1,5 @@
 "------PLUGINS SETTINGS----------
-set nocompatible              " be iMproved, required
+  set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -24,22 +24,13 @@ filetype plugin indent on    " required
 "-------NERDTREE SETTINGS-------
 nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup = 1
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden = 1
 
-" line numbers
-set number
-set relativenumber
-
-" theme
-colorscheme solarized
-let g:solarized_termcolors=256
+"---------AIRLINE SETTINGS------
+let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
-set background=dark
 
-" indention
-set autoindent
-
-"------------TABS--------------
+"------------TABS---------------
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -48,6 +39,18 @@ set softtabstop=4
 autocmd FileType make setlocal noexpandtab
 " tab completion
 set wildmenu
+
+" line numbers
+set number
+set relativenumber
+
+" theme
+colorscheme solarized
+let g:solarized_termcolors=256
+set background=dark
+
+" indention
+set autoindent
 
 " highlight found words
 set hlsearch
