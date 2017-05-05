@@ -1,13 +1,10 @@
-" Plugin config
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"------PLUGIN SETTINGS----------
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -15,17 +12,17 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 
 Plugin 'airblade/vim-gitgutter'
-
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-
-Plugin 'isRuslan/vim-es6'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"-------NERDTREE SETTINGS-------
+nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
+let g:nerdtree_tabs_open_on_console_startup = 1
+let NERDTreeShowHidden=1
 
 " hybrid line numbers
 set number
@@ -65,13 +62,9 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
-"toggling paste mode
+" toggling paste mode
 set pastetoggle=<F2>
 
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" last command
+set showcmd
 
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
