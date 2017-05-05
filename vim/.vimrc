@@ -1,4 +1,4 @@
-"------PLUGINS SETTINGS----------
+"------PLUGINS SETTINGS---------
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -8,7 +8,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
@@ -18,6 +17,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/a.vim'
+Plugin 'Raimondi/delimitMate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
