@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/a.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
