@@ -7,12 +7,11 @@ fi
 
 DIR=$(cd "$(dirname "$0")"; pwd)
 
-if [ ! -L ~/.gitconfig ]; then
-    echo "creating symbolic link ~/.gitconfig from $DIR/git/.config"
-    ln -s $DIR/git/.gitconfig ~/.gitconfig
-fi
+echo "creating symbolic link ~/.gitconfig from $DIR/git/.config"
+ln -sf $DIR/git/.gitconfig ~/.gitconfig
 
-if [ ! -L ~/.vimrc ]; then
-    echo "creating symbolic link ~/.vimrc from $DIR/vim/.vimrc"
-    ln -s $DIR/vim/.vimrc ~/.vimrc
-fi
+echo "creating symbolic link ~/.vimrc from $DIR/vim/.vimrc"
+ln -sf $DIR/vim/.vimrc ~/.vimrc
+
+echo "creating symbolic link ~/.tmux.conf from $DIR/tmux/.tmux.conf"
+ln -sf $DIR/tmux/.tmux.conf ~/.tmux.conf
