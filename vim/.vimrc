@@ -1,5 +1,5 @@
 "------PLUGINS SETTINGS----------
-  set nocompatible              " be iMproved, required
+set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -16,6 +16,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -29,6 +30,10 @@ let NERDTreeShowHidden = 1
 "---------AIRLINE SETTINGS------
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
+
+"---------TAGBAR SETTINGS-------
+nmap <silent> <leader>b :TagbarToggle<CR>
+let g:tagbar_autoclose = 2
 
 "------------TABS---------------
 set expandtab
