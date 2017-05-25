@@ -1,5 +1,7 @@
 #ip address
 alias myip='curl icanhazip.com'
+#local ip
+alias local='hostname -I'
 
 #check for a new release
 alias upgrade='do-release-upgrade'
@@ -14,6 +16,9 @@ alias mkdir='mkdir -pv'
 
 #easily find running process
 alias ps='ps aux | grep'
+
+#extract .tar.gz file
+alias extract='tar xzvf'
 
 #git commands
 alias add='git add .'
