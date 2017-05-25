@@ -15,3 +15,7 @@ ln -sf $DIR/vim/.vimrc ~/.vimrc
 
 echo "creating symbolic link ~/.tmux.conf from $DIR/tmux/.tmux.conf"
 ln -sf $DIR/tmux/.tmux.conf ~/.tmux.conf
+
+echo "creating symbolic link ~/.bash_aliases from $DIR/bash/.bash_aliases"
+ln -sf $DIR/bash/.bash_aliases ~/.bash_aliases
+. ~/.bash_aliases
