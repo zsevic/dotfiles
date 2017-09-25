@@ -1,5 +1,13 @@
-[user]
-	email = zeljkosevic95@gmail.com
-	name = zsevic
 [push]
 	default = current
+[alias]
+	identity = "! git config user.name $(git config user.$1.name); git config user.email $(git config user.$1.email); :"
+[user "github"]
+	name = zsevic
+	email = zsevic95@gmail.com
+[user "bitbucket"]
+	email = zeljko@spartans.tech
+	name = zsevic
+[user "heroku"]
+	email = zeljkosevic95@gmail.com
+	name = zsevic
