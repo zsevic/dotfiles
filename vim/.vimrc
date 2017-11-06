@@ -29,7 +29,7 @@ filetype plugin indent on    " required
 
 "-------NERDTREE SETTINGS-------
 nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_open_on_console_startup = 0 
 let NERDTreeShowHidden = 1
 
 "---------AIRLINE SETTINGS------
