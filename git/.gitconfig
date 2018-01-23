@@ -11,3 +11,5 @@
 [user "heroku"]
 	email = zeljkosevic95@gmail.com
 	name = zsevic
+[credential]
+	helper = cache --timeout=3600
