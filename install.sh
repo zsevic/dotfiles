@@ -5,6 +5,22 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
+if ! [ -x  "$(command -v zsh)" ]; then
+    echo "installing zsh"
+    sudo apt-get install zsh
+    echo "installing oh-my-zsh"
+    wget -q https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -
+fi
+
+if [ ! -f ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme ]; then
+    if [ ! -d ~/.oh-my-zsh/custom/themes ]; then
+        echo "making directory for custom themes"
+        mkdir -p ~/.oh-my-zsh/custom/themes
+    fi
+    echo "installing bullet-train theme"
+    wget -q -P ~/.oh-my-zsh/custom/themes "https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme"
+fi
+
 DIR=$(cd "$(dirname "$0")"; pwd)
 
 echo "creating symbolic link ~/.gitconfig from $DIR/git/.config"
