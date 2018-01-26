@@ -22,6 +22,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'prettier/vim-prettier'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,9 +43,9 @@ let g:tagbar_autoclose = 2
 
 "------------TABS---------------
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 " makefile tabs
 autocmd FileType make setlocal noexpandtab
 " tab completion
@@ -55,7 +56,7 @@ set number
 set relativenumber
 
 " theme
-colorscheme solarized
+colorscheme badwolf
 let g:solarized_termcolors=256
 set background=dark
 
