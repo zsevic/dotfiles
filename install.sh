@@ -2,7 +2,9 @@
 
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     echo "installing Vundle for plugins"
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim -q
+    echo "installing vim plugins"
+    vim +PluginInstall +qall
 fi
 
 if ! [ -x  "$(command -v zsh)" ]; then
