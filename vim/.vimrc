@@ -9,37 +9,21 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/a.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'prettier/vim-prettier'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"-------NERDTREE SETTINGS-------
-nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_open_on_console_startup = 0 
-let NERDTreeShowHidden = 1
-
 "---------AIRLINE SETTINGS------
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
-
-"---------TAGBAR SETTINGS-------
-nmap <silent> <leader>b :TagbarToggle<CR>
-let g:tagbar_autoclose = 2
 
 "------------TABS---------------
 set expandtab
@@ -54,6 +38,8 @@ set wildmenu
 " line numbers
 set number
 set relativenumber
+
+syntax on
 
 " theme
 colorscheme badwolf
