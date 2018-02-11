@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "legacy",
+    "workbench.iconTheme": "material-icon-theme"
+}
