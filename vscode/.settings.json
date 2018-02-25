@@ -2,6 +2,7 @@
     "editor.fontFamily": "'Fira Code'",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
+    "editor.lineNumbers": "relative",
     "workbench.colorTheme": "legacy",
     "workbench.iconTheme": "material-icon-theme"
 }
