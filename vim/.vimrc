@@ -16,6 +16,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'prettier/vim-prettier'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -24,6 +25,9 @@ filetype plugin indent on    " required
 "---------AIRLINE SETTINGS------
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
+
+"-----COMMENTARY SETTINGS-------
+noremap <leader>/ :Commentary<cr>
 
 "------------TABS---------------
 set expandtab
