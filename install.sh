@@ -31,14 +31,14 @@ ln -sf $DIR/git/.gitconfig ~/.gitconfig
 echo "creating symbolic link ~/.vimrc from $DIR/vim/.vimrc"
 ln -sf $DIR/vim/.vimrc ~/.vimrc
 
-echo "creating symbolic link ~/.tmux.conf from $dir/tmux/.tmux.conf"
-ln -sf $dir/tmux/.tmux.conf ~/.tmux.conf
+#echo "creating symbolic link ~/.tmux.conf from $dir/tmux/.tmux.conf"
+#ln -sf $dir/tmux/.tmux.conf ~/.tmux.conf
 
 #echo "creating symbolic link ~/.bash_aliases from $dir/bash/.bash_aliases"
 #ln -sf $dir/bash/.bash_aliases ~/.bash_aliases
 #. ~/.bash_aliases
 
-echo "setting up vscode"
-rm /home/zsevic/.config/code/user/settings.json
-cp $DIR/vscode/.settings.json /home/zsevic/.config/Code/User/settings.json
-ln -sf $DIR/vscode/.settings.json /home/zsevic/.config/Code/User/settings.json
+#echo "setting up vscode"
+#rm /home/zsevic/.config/code/user/settings.json
+#cp $DIR/vscode/.settings.json /home/zsevic/.config/Code/User/settings.json
+#ln -sf $DIR/vscode/.settings.json /home/zsevic/.config/Code/User/settings.json
