@@ -5,6 +5,7 @@
 * Tamper Chrome
 * Grammarly for Chrome
 * Githunt
+* Lighthouse
 
 ## Visual Studio Code
 * Quokka.js
