@@ -6,6 +6,9 @@
 * Grammarly for Chrome
 * Githunt
 * Lighthouse
+* Refined Github
+* Markdown Viewer
+* MetaMask
 
 ## Visual Studio Code
 * Quokka.js
@@ -15,3 +18,5 @@
 * Git History
 * Material Icon Theme
 * Path Intellisense
+* Python
+* EditorConfig for VS Code
