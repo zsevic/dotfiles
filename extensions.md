@@ -1,5 +1,6 @@
 ## Google Chrome
-* LastPass 
+
+* LastPass
 * Visualping
 * minerBlock
 * Tamper Chrome
@@ -11,6 +12,7 @@
 * MetaMask
 
 ## Visual Studio Code
+
 * Quokka.js
 * Prettier - Code formatter
 * Clipboard History
