@@ -1,7 +1,11 @@
 #!/bin/bash
 
 sudo apt-get install build-essential vim git curl nmap traceroute \
-whois tmux ghc scala -y
+whois tmux ghc scala rubygems ruby ruby-dev make gcc -y
+
+# LAMP
+sudo apt-get install apache2 mysql-server php libapache2-mod-php \
+php-mcrypt php-mysql phpmyadmin -y
 
 # node
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
@@ -17,7 +21,9 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 pip install python-constraint pandas matplotlib IPython sklearn \
 tensorflow scipy --user
 
-# install vscode docker mongodb-org virtualBox vagrant
+sudo gem install jekyll bundler
+
+# install vscode docker mongodb-org virtualBox vagrant vmware
 
 # fira-code
 ./firacode.sh
