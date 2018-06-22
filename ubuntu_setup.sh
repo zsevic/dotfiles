@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get install build-essential vim git curl nmap traceroute \
-whois tmux ghc scala rubygems ruby ruby-dev make gcc -y
+whois tmux ghc scala rubygems ruby ruby-dev make gcc powerline -y
 
 # LAMP
 sudo apt-get install apache2 mysql-server php libapache2-mod-php \
@@ -14,12 +14,14 @@ sudo apt-get install nodejs -y
 sudo npm install -g webpack webpack-cli nodemon  claudia \
 standard heroku-cli yarn n vue-cli create-react-app firebase-tools \
 truffle ganache-cli yo gulp-cli @angular/cli commitizen \
-cz-conventional-changelog fkill-cli prettier
+cz-conventional-changelog fkill-cli prettier python3-pip
 
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
 pip install python-constraint pandas matplotlib IPython sklearn \
 tensorflow scipy --user
+
+pip3 install notify2 --user
 
 sudo gem install jekyll bundler
 
