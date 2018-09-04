@@ -12,6 +12,7 @@ if ! [ -x  "$(command -v zsh)" ]; then
     sudo apt-get install zsh
     echo "installing oh-my-zsh"
     wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+    echo "exec zsh" >> ~/.bashrc
 fi
 
 #if [ ! -f ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme ]; then
