@@ -79,3 +79,6 @@ set showcmd
 set noswapfile
 set nobackup
 set nowritebackup
+
+" mouse click navigation
+set mouse=a
