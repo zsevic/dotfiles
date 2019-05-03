@@ -15,3 +15,9 @@ curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/ma
 # fira code setup
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
+
+brew cask install spectacle
+
+defaults write -g NSWindowResizeTime -float 0.003
+
+brew install python3
