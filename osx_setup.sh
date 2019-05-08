@@ -20,4 +20,13 @@ brew cask install spectacle
 
 defaults write -g NSWindowResizeTime -float 0.003
 
+# python setup
 brew install python3
+pip3 install virtualenv virtualenvwrapper
+
+echo "export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/dev
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python/3.7.3/bin/python3.7
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
