@@ -5,11 +5,8 @@
 [user "github"]
 	name = zsevic
 	email = zsevic95@gmail.com
-[user "bitbucket"]
-	email = zeljko@spartans.tech
-	name = zsevic
 [user "heroku"]
-	email = zeljkosevic95@gmail.com
 	name = zsevic
+	email = zeljkosevic95@gmail.com
 [credential]
 	helper = cache --timeout=3600
