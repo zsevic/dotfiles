@@ -4,7 +4,9 @@
   register: tmux_plugins_stat
 
 - name: Install Tmux plugin manager
-  raw: 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
+  git:
+    repo: https://github.com/tmux-plugins/tpm
+    dest: ~/.tmux/plugins/tpm
   when: not tmux_plugins_stat.stat.exists
 
 - name: Link tmux.conf
