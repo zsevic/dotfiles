@@ -22,6 +22,8 @@ apt_packages:
 deb_uris:
   - name: code
     uri: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+  - name: fluxgui
+    uri: https://launchpad.net/~nathan-renniewaldock/+archive/ubuntu/flux/+files/fluxgui_1.2.0~pre~20190501-g0548b6f-1~eoan_all.deb
   - name: google-chrome-stable
     uri: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   - name: slack-desktop
