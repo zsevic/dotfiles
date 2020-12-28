@@ -9,6 +9,7 @@ homebrew_packages:
   - git
   - node
   - python3
+  - ruby
   - tmux
   - vim
   - wget

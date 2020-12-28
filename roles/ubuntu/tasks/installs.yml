@@ -14,7 +14,8 @@
   with_items: '{{ apt_repositories }}'
   become: true
 
-- apt:
+- name: Install apt packages
+  apt:
     name: '{{ apt_packages }}'
     update_cache: yes
   become: true
@@ -30,3 +31,10 @@
   with_indexed_items: '{{ deb_uris }}'
   when: deb_uris_check_result.results[{{ item.0 }}].stdout == ""
   become: true
+
+- name: Install snap packages
+  snap:
+    name: '{{ item }}'
+    classic: yes
+  with_items: '{{ snap_packages }}'
+  become: yes
