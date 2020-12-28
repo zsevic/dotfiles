@@ -1,2 +1,4 @@
 - name: Download iterm2 colors
-  raw: 'wget https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors -P ~/Library/Colors'
+  get_url:
+    url: https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
+    dest: ~/Library/Colors
