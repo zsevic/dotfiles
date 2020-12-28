@@ -8,6 +8,7 @@ apt_repositories:
 apt_packages:
   - build-essential
   - curl
+  - docker.io
   - fonts-firacode
   - git
   - python3
