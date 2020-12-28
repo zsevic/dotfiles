@@ -27,9 +27,9 @@
 
 - name: Install missing deb packages
   apt:
-    deb: '{{ item.1.uri }}'
-  with_indexed_items: '{{ deb_uris }}'
-  when: deb_uris_check_result.results[{{ item.0 }}].stdout == ""
+    deb: '{{ item.0.uri }}'
+  loop: "{{ deb_uris|zip(deb_uris_check_result.results)|list }}"
+  when: item.1.stderr != ""
   become: true
 
 - name: Install snap packages
