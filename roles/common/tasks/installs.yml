@@ -1,0 +1,12 @@
+- name: Install pip packages
+  pip:
+    name: '{{ pip_packages }}'
+    state: latest
+    executable: pip3
+
+- name: Install gem packages
+  gem:
+    name: '{{ item }}'
+    state: latest
+    user_install: yes
+  with_items: '{{ gem_packages }}'

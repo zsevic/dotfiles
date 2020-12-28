@@ -1,0 +1,15 @@
+- name: Check for Tmux plugin manager installation
+  stat:
+    path: "{{ lookup('env', 'HOME') }}/.tmux/plugins/tpm"
+  register: tmux_plugins_stat
+
+- name: Install Tmux plugin manager
+  raw: 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
+  when: not tmux_plugins_stat.stat.exists
+
+- name: Link tmux.conf
+  file:
+    src: '{{ ansible_env.PWD }}/roles/common/files/tmux/tmux.conf'
+    path: ~/.tmux.conf
+    state: link
+    force: yes

@@ -1,0 +1,11 @@
+- name: Install common packages
+  include: installs.yml
+
+- name: Configure oh-my-zsh
+  include: oh-my-zsh.yml
+
+- name: Configure Tmux
+  include: tmux.yml
+
+- name: Configure Vim
+  include: vim.yml

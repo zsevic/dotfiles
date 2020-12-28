@@ -1,0 +1,17 @@
+- name: Set up homebrew taps
+  homebrew_tap:
+    tap: '{{ item }}'
+  with_items: '{{ homebrew_taps }}'
+
+- name: Install packages
+  homebrew:
+    name: '{{ homebrew_packages }}'
+    state: latest
+
+- name: Install cask packages
+  homebrew:
+    name: '{{ homebrew_cask_packages }}'
+    options: cask
+    state: present
+  register: result
+  failed_when: not ("'is already installed' in result.msg") and not("'It seems there is already an App at' in result.msg")

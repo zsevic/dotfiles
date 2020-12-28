@@ -2,24 +2,17 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-scripts/a.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'prettier/vim-prettier'
-Plugin 'tpope/vim-commentary'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Raimondi/delimitMate'
+Plug 'flazz/vim-colorschemes'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()              " required
 filetype plugin indent on    " required
 
 "---------AIRLINE SETTINGS------
@@ -28,6 +21,10 @@ let g:airline_theme='solarized'
 
 "-----COMMENTARY SETTINGS-------
 noremap <leader>/ :Commentary<cr>
+
+"-----PRETTIER SETTINGS---------
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 
 "------------TABS---------------
 set expandtab
@@ -46,7 +43,7 @@ set relativenumber
 syntax on
 
 " theme
-colorscheme badwolf
+colorscheme molokai
 let g:solarized_termcolors=256
 set background=dark
 

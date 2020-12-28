@@ -1,0 +1,7 @@
+- name: Increase window resize speed
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSWindowResizeTime
+    type: float
+    value: '0.001'
+    state: present

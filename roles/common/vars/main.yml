@@ -1,0 +1,7 @@
+pip_packages:
+  - powerline-status
+  - virtualenv
+  - virtualenvwrapper
+
+gem_packages:
+  - bundle

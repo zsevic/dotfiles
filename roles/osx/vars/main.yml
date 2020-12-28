@@ -1,0 +1,24 @@
+homebrew_taps:
+  - homebrew/cask
+  - homebrew/cask-fonts
+  - heroku/brew
+
+homebrew_packages:
+  - curl
+  - docker
+  - git
+  - node
+  - python3
+  - tmux
+  - vim
+  - wget
+  - zsh
+
+homebrew_cask_packages:
+  - flux
+  - font-fira-code
+  - google-chrome
+  - heroku
+  - iterm2
+  - spotify
+  - visual-studio-code

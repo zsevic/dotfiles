@@ -1,0 +1,13 @@
+- name: Install Vim plugin manager
+  raw: 'curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+- name: Link vimrc
+  file:
+    src: '{{ ansible_env.PWD }}/roles/common/files/vim/vimrc'
+    path: ~/.vimrc
+    state: link
+    force: yes
+
+- name: Install Vim packages
+  raw: 'vim -es -u ~/.vimrc -i NONE -c "PlugInstall" -c "qa"'

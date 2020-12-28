@@ -1,0 +1,7 @@
+- include: defaults.yml
+
+- name: Install OSX packages
+  include: installs.yml
+
+- name: Configure iterm2
+  include: iterm2.yml

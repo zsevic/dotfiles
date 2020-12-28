@@ -1,8 +1,19 @@
 # .files
+> Ansible playbook for configuration files
 
-Content
- - `.vimrc`, a config file for Vim
- - `.settings.json`, a config file for Visual Studio Code
- - `.gitconfig`, a config file for Git
- - `.tmux.conf`, a config file for Tmux
- - `install.sh`, bash script for installing those files
+### Setup
+```bash
+git clone https://github.com/zsevic/dotfiles
+cd dotfiles
+./bootstrap.sh
+```
+
+### Additional setup
+- Powerline fonts - On iterm2's Preferences/Profiles/Text page, in Text Rendering section, select **Use built-in Powerline glyphs**
+- Visual Studio Code settings - Use [settings.json](./roles/common/files/vscode/settings.json) file
+- iterm2 setup
+  - On Preferences/Profiles/Text page, in Text Rendering section, change the font to **Fira Code** and choose the preferred style (Regular/Light/Medium/Retina/Bold)
+  - On Preferences/Profile/Colors page, change Color Preset to **material-design-colors**
+
+### Technologies used
+- Ansible
