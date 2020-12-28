@@ -1,0 +1,30 @@
+apt_key_urls: []
+
+apt_key_ids:
+  - keyserver: keyserver.ubuntu.com
+    id: 0D811D58
+
+apt_repositories:
+  - deb http://repository.spotify.com stable non-free
+
+apt_packages:
+  - build-essential
+  - curl
+  - fonts-firacode
+  - git
+  - powerline
+  - python3
+  - rubygems
+  - spotify-client
+  - tmux
+  - vim
+  - zsh
+  - wget
+
+deb_uris:
+  - name: code
+    uri: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+  - name: google-chrome-stable
+    uri: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - name: slack-desktop
+    uri: https://downloads.slack-edge.com/linux_releases/slack-desktop-4.12.0-amd64.deb

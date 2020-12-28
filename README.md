@@ -5,7 +5,7 @@
 ```bash
 git clone https://github.com/zsevic/dotfiles
 cd dotfiles
-./bootstrap.sh
+./bin/bootstrap.sh
 ```
 
 ### Additional setup

@@ -1,0 +1,6 @@
+- name: Configure NodeJS
+  include: nodejs.yml
+
+- name: Install Ubuntu packages
+  include: installs.yml
+

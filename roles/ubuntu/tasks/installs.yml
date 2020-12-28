@@ -1,0 +1,32 @@
+- apt_key:
+    url: '{{ item }}'
+  with_items: '{{ apt_key_urls }}'
+  become: true
+
+- apt_key:
+    keyserver: '{{ item.keyserver }}'
+    id: '{{ item.id }}'
+  with_items: '{{ apt_key_ids }}'
+  become: true
+
+- apt_repository:
+    repo: '{{ item }}'
+  with_items: '{{ apt_repositories }}'
+  become: true
+
+- apt:
+    name: '{{ apt_packages }}'
+    update_cache: yes
+  become: true
+
+- name: Check if deb packages are already installed
+  shell: dpkg -s '{{ item.name }}' | grep 'install ok installed' | true
+  with_items: '{{ deb_uris }}'
+  register: deb_uris_check_result
+
+- name: Install missing deb packages
+  apt:
+    deb: '{{ item.1.uri }}'
+  with_indexed_items: '{{ deb_uris }}'
+  when: deb_uris_check_result.results[{{ item.0 }}].stdout == ""
+  become: true
