@@ -21,5 +21,6 @@ homebrew_cask_packages:
   - google-chrome
   - heroku
   - iterm2
+  - slack
   - spotify
   - visual-studio-code
